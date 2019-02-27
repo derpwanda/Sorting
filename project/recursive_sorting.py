@@ -152,60 +152,8 @@ def timsort(arr):
 
     return arr
 
-<<<<<<< HEAD
-
- 
-=======
-
-def mergeSort(arr):
-    print('mergesort call')
-    print(arr)
-
-    if len(arr) > 1:
-        middle = (len(arr))//2
-        L = arr[:middle]
-        R = arr[middle:]
-
-        mergeSort(L)
-        mergeSort(R)
-
-        i = j = k = 0
-
-        # merging
-        while i < len(L) and j < len(R):
-            if L[i] < R[j]:
-                arr[k] = L[i]
-                i += 1
-            else:
-                arr[k] = R[j]
-                j += 1
-            k += 1
-
-        # checking if any element was left out
-        while i < len(L):
-            arr[k] = L[i]
-            i += 1
-            k += 1
-            print(arr)
-
-        while j < len(R):
-            arr[k] = R[j]
-            j += 1
-            k += 1
-            print(arr)
-
-    return arr
-
-
-# try it out
-print("Merge Sort 2")
-arr = [2, 5, 9, 7, 4, 1, 3, 8, 6]
-print(mergeSort(arr))
-print(arr)
-
 
 # QUICK SORT WITH PARTITION helper
-
 def partition(arr, low, high):
     i = low - 1
     pivot = arr[high]
@@ -229,4 +177,3 @@ def quick_sort2(arr, low, high=None):
         quick_sort2(arr, low, pivot - 1)
         quick_sort2(arr, pivot + 1, high)
     return arr
->>>>>>> 348b0f76be1801bf06bd37510f23691751613211
