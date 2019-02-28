@@ -31,6 +31,7 @@ print(my_arr)
 
 
 # TO-DO: implement the Insertion Sort function below
+# pythontutor: https://goo.gl/UnH5qL
 def insertion_sort(arr):
     # separate the first element from the rest of the array
     # current unsorted index

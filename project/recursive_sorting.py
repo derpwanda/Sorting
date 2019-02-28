@@ -107,6 +107,7 @@ def merge_sort_in_place(arr, l, r):
 # are smaller than the SORTED POSITION and the elements on the right-hand
 # side are equal-to or greater than the SORTED POSITION.
 
+# python tutor: https://goo.gl/Zwo5pU
 def quick_sort(arr, low, high):
     pivot = high
     count = low
