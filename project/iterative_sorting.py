@@ -118,19 +118,25 @@ print(arr)
 # STRETCH: implement the Count Sort function below
 # count sort is useful for small ranges
 # You count how many of each digit there is, and then you determine each digit's starting position by counting how many cells are taken up by the digits before it
+
+#  In computer science, counting sort is an algorithm for sorting a collection 
+# of objects according to keys that are small integers; that is, it is an
+# integer sorting algorithm.
+
 def count_sort(arr, maximum ):
 
     m = maximum + 1
     count = [0] * m
 
     for a in arr:
-        # count
+        # count occurences
         count[a] += 1
 
     i = 0
     for a in range(m):
         for c in range(count[a]):
-            arr[i] += a
+            arr[i] = a
+            i += 1
     return arr
 
 print('countsort')
