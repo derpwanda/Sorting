@@ -95,6 +95,15 @@ def bubble_sort(arr):
     #             arr[i], arr[i + 1] = arr[i + 1], arr[i]
     #             is_sorted = False
     #     return arr
+    
+#     def bubble_sort( arr ):
+#     for i in range(0, len(arr) - 1):
+#         if arr[i] > arr[i+1]:
+#             arr[i], arr[i+1] = arr[i+1], arr[i]
+#         if i != 0 and arr[i] < arr[i-1]:
+#             arr[i], arr[i-1] = arr[i-1], arr[i]
+
+#     return arr
 
 
 # try it out
